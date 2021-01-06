@@ -1,0 +1,124 @@
+﻿:root { 
+  --pageBG: #FAFAFA;
+  --pageTxt: #333333;
+  --backBG: #333333;
+  --backTxt: #DDEEFF;
+  --accent: #EE8A00;
+  --lowContrast: #EEEEEE;
+  --lowerContrast: #CCCCCC;
+  --mediumContrast: #AAAAAA;
+  --higherContrast: #777777;
+  --highContrast: #555555;
+  --errorBG: #DD0000;
+  --errorTxt: #FFFFFF;
+  --successBG: #00AA33;
+  --successTxt: #FFFFFF;
+  --activeBG: var(--accent);
+  --activeTxt: #FFFFFF;
+  --disabledBG: #CCCCCC;
+  --disabledTxt: #777777;
+}
+
+body {
+    font-family: sans-serif;
+    padding-top: 65px;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--accent);
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+iframe {
+    border: 3px solid var(--accent);
+    border-radius: 3px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.topBar {
+        box-sizing: border-box;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 99;
+        width: 100vw;
+        height: 50px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid var(--accent);
+        box-shadow: 0px 0px 5px var(--lowerContrast);    
+}
+    .topBar table {
+
+    }
+        .topBar td {
+            padding: 5px;
+        }
+
+.waitHidden {
+    display: none;
+}
+.wait {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 45vh;
+    text-align: center;
+}
+    .wait h1 {
+        color: #FFFFFF !important;
+        font-size: 50px;
+        opacity: 0.9;
+    }
+
+.pageBar {
+    box-sizing: border-box;
+    width: 100vw;
+    text-align: center;
+    padding: 0px 5vw;
+}
+    .pageBar table {
+        text-align: left;
+    }
+    .pageBar td {
+        padding: 5px;
+        vertical-align: top;
+    }
+
+.list {
+    border-collapse: collapse;
+}
+    .list th, .list td {
+        padding: 5px;
+    }
+    .list th {
+        background-color: var(--activeBG);
+        color: var(--activeTxt);
+    }
+    .list tr:nth-child(even) td {
+        background-color: var(--lowContrast);   
+    } 
+    .list tr:nth-child(odd) td {
+        background-color: var(--lowerContrast);   
+    }
+    .list tr:hover td {
+        background-color: var(--mediumContrast);
+    }
+
+.fileUpload {
+    box-sizing: border-box;
+    border: 1px solid var(--mediumContrast);
+    background-color: var(--lowContrast);
+    padding: 21px;
+    width: 90%;
+}
