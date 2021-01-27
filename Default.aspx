@@ -97,6 +97,14 @@
                     In this overview we show the most commonly used Controls.
                 </td>
             </tr>
+            <tr>
+                <td colspan="2">
+                    <br /><br /><br />
+                    <div class="comment">
+                        <asp:Label ID="lblComment" runat="server" />
+                    </div>
+                </td>
+            </tr>
         </table>
     </div>
     </form>

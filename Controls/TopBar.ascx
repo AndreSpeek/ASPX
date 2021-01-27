@@ -4,7 +4,7 @@
         <tr>
             <td>
                 <asp:LinkButton ID="btnHome" runat="server" OnClick="btnHome_Click" OnClientClick="showWait();">
-                    <img src="../Images/SilverEssence295_35.png" />
+                    <img src="../Images/andre_speek.jpg" />&nbsp;<h1>A Basic Introdution to ASP.NET WebForms with C#</h1>
                 </asp:LinkButton>
             </td>
         </tr>
